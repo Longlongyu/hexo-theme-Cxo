@@ -1,0 +1,9 @@
+extends includes/layout.pug
+
+block content
+  include includes/recent-posts.pug
+  if page.posts.length > 11
+    div!= paginator(0)
+
+
+

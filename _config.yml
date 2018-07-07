@@ -1,0 +1,27 @@
+
+# html lang
+language: cn
+# avatar
+avatar:
+# author
+author:
+# signature
+signature:
+
+# main menu navigation
+menu:
+  Home: /
+  About: /about
+  Contact: /contact
+  Archives: /archives
+
+# Miscelaneous
+favicon: /favicon.ico
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/style.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/main.js

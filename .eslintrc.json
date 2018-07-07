@@ -1,0 +1,36 @@
+{
+    "extends": [
+        "eslint-config-alloy"
+    ],
+    "globals": {
+        "siteMeta": true
+    },
+    "env": {
+        "jquery": true
+    },
+    "rules": {
+        "indent": [
+            "warn",
+            2,
+            {
+                "SwitchCase": 1,
+                "flatTernaryExpressions": true
+            }
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "no-unused-vars": [
+            "warn",
+            {
+                "vars": "all",
+                "args": "none",
+                "caughtErrors": "none"
+            }
+        ],
+        "one-var": [
+            "off"
+        ]
+    }
+}
