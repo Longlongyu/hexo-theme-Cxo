@@ -1,6 +1,4 @@
-
-# html lang
-language: cn
+# —————————— Profile —————————— #
 # avatar
 avatar:
 # author
@@ -8,20 +6,22 @@ author:
 # signature
 signature:
 
+# —————————— Indivdual —————————— #
+# Miscelaneous
+favicon: /favicon.ico
+# truncate length of abstracts in index page (the default is 300, there will be no abstruct if you input 0)
+truncate_length: 
+
+# —————————— Others —————————— #
 # main menu navigation
 menu:
   Home: /
   About: /about
   Contact: /contact
   Archives: /archives
-
-# Miscelaneous
-favicon: /favicon.ico
-
 # stylesheets loaded in the <head>
 stylesheets:
 - /css/style.css
-
 # scripts loaded in the end of the body
 scripts:
 - /js/main.js
