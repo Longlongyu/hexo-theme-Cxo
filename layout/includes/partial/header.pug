@@ -27,8 +27,10 @@ else
     p= theme.subtitle
   - }
   nav#menu-inner
-    .menu-label-box
-      each url, label in theme.menu
-        a(href=url)= label
-    .menu-title
-      h3= theme.main_title || config.title
+    .menu-nav
+      .menu-title
+        a(href='/')= theme.main_title || config.title
+      .menu-label-box
+        each url, label in theme.menu
+          a(href=url)= label
+    

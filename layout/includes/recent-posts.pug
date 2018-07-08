@@ -5,10 +5,14 @@ if page.posts.length > 0
   #recent-posts
     each post in page.posts.sort('date', -1).limit(10).toArray()
       .recent-post-item
-        a(href=config.root + post.path)= post.title
+        .post-title
+          a(href=config.root + post.path)= post.title
         if post.date
-          time(datetime=post.date.toJSON())= date(post.date, date_format)
-        p.recent-post-abstract= post.abstract
+          .post-time
+            i.fa.fa-table
+            time(datetime=post.date.toJSON())=  date(post.date, date_format)
+        .recent-post-abstract
+          p.fa.fa-chain #{post.abstract}
         - let _content = null
         - if (post.excerpt) {
           - _content = post.excerpt
