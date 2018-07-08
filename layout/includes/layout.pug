@@ -1,3 +1,4 @@
+doctype html
 
 - var pageTitle = page.title || config.subtitle || ''
 - if (is_archive()) pageTitle = 'Archives'
@@ -6,8 +7,6 @@
 - if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
 - if (is_year()) pageTitle += ': ' + page.year
 - pageTitle += config.title 
-
-doctype html
 html(lang=config.language)
   head
     meta(charset='UTF-8')
@@ -18,10 +17,7 @@ html(lang=config.language)
         link(rel='stylesheet', href=url)
     link(rel="icon", href=config.root + 'img/favicon.png')
   body
-    #menu-outer
-      nav#menu-inner
-        each url, label in theme.menu
-          a(href=url)= label
+    include partial/header.pug
     #content-outer
       #content-inner
         if body

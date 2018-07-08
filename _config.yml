@@ -1,4 +1,6 @@
 # —————————— Profile —————————— #
+# language
+language: cn
 # avatar
 avatar:
 # author
@@ -6,11 +8,30 @@ author:
 # signature
 signature:
 
+# ========== Site ========== #
+# title of the site
+SEO_title: 
+# main title
+main_title: 
+# subtitle
+subtitle: 
+# 
+# site haeder image
+site_header_image: '/img/intro/index-bg.jpg'
+# post haeder image
+post_header_image:
+# 404 image
+_404_image:
+# about image
+about_header_image: 
+
 # —————————— Indivdual —————————— #
 # Miscelaneous
 favicon: /favicon.ico
 # truncate length of abstracts in index page (the default is 300, there will be no abstruct if you input 0)
 truncate_length: 
+# intro height (the default is 40 percents of the screen)
+intro_height: 40
 
 # —————————— Others —————————— #
 # main menu navigation
