@@ -6,7 +6,7 @@ doctype html
 - if (is_category()) pageTitle = 'Category: ' + page.category
 - if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
 - if (is_year()) pageTitle += ': ' + page.year
-- pageTitle += config.title 
+- pageTitle += ' '+config.title 
 html(lang=config.language)
   head
     meta(charset='UTF-8')
@@ -16,6 +16,7 @@ html(lang=config.language)
       each url in theme.stylesheets
         link(rel='stylesheet', href=url)
     link(rel="icon", href=config.root + 'img/favicon.png')
+    link(rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css?version=1.5.6")
   body
     include partial/header.pug
     #content-outer
@@ -27,11 +28,11 @@ html(lang=config.language)
     #bottom-outer
       #bottom-inner
         span Site construction by
-        span= ' ' + config.author + ' '
-        span using
         a(href='http://hexo.io')
-          span hexo blog framework
-        span .
+          span Hexo
+        span theme 
+        a(href='https://github.com/Longlongyu/hexo-theme-Cxo')
+          span Cxo
         br
         a(href=config.root) Home
     if theme.scripts !== undefined && theme.scripts.length > 0

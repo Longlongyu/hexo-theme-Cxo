@@ -10,11 +10,11 @@ signature:
 
 # ========== Site ========== #
 # title of the site
-SEO_title: 
+SEO_title: Mr.Long's Blog
 # main title
-main_title: 
+main_title: Mr.Long's Blog
 # subtitle
-subtitle: 
+subtitle: Welcome to my Blog!
 # 
 # site haeder image
 site_header_image: '/img/intro/index-bg.jpg'
@@ -30,15 +30,15 @@ about_header_image:
 favicon: /favicon.ico
 # truncate length of abstracts in index page (the default is 300, there will be no abstruct if you input 0)
 truncate_length: 
-# intro height (the default is 40 percents of the screen)
-intro_height: 40
+# intro height (the default is 60 percents of the screen)
+intro_height: 60
 
 # —————————— Others —————————— #
 # main menu navigation
 menu:
   Home: /
   About: /about
-  Contact: /contact
+  Category: /category
   Archives: /archives
 # stylesheets loaded in the <head>
 stylesheets:

@@ -1,6 +1,6 @@
 //- intro height , you can input other number in _config.yml
 - let menuOuterStyle = ''
-- let introHeight = typeof theme.intro_height === 'number' ? theme.intro_height : 40
+- let introHeight = typeof theme.intro_height === 'number' ? theme.intro_height : 60
 - let introStyle = `height: ${introHeight}vh;`
 //- site haeder image url
 - let bgURL = ''
@@ -12,10 +12,23 @@ else if (page.layout === '404')
   - bgURL = theme._404_image || theme.site_header_image
 else if (page.layout === 'about')
   - bgURL = theme.about_header_image || theme.site_header_image
+else if (is_archive())
+  - bgURL = theme.about_header_image || theme.site_header_image
+else 
+  - bgURL = theme.site_header_image
 - let bgStyle =  `background-image: url(${bgURL});`
-- menuOuterStyle = introStyle + bgStyle
-#menu-outer(style= menuOuterStyle)
-  h1 Recent Posts
+#menu-outer(style= introStyle)
+  .menu-intro-img(style=bgStyle)
+  - if (is_post()){
+    h1.post-title= page.title
+
+  - } else {
+    h1= theme.main_title || config.title
+    p= theme.subtitle
+  - }
   nav#menu-inner
-    each url, label in theme.menu
-      a(href=url)= label
+    .menu-label-box
+      each url, label in theme.menu
+        a(href=url)= label
+    .menu-title
+      h3= theme.main_title || config.title

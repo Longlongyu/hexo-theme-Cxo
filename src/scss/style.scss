@@ -1,1 +1,11 @@
-@import "_compontents/_partial/_header";
+// reset
+@import '_normalize';
+// basis
+@import '_variables';
+@import '_global-css';
+@import '_mixin';
+
+// partial
+@import '_compontents/_partial/_header';
+
+@import '_compontents/_partial/_recent-posts';

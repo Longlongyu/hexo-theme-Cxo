@@ -1,0 +1,22 @@
+#recent-posts {
+  width: 100%;
+  margin: auto;
+  padding: 2rem;
+}
+.recent-post-item {
+  color: $post-sub-text;
+  >a:first-of-type {
+    display: block;
+    margin-bottom: 1rem;
+    color: $post-title;
+    text-decoration: none;
+    font-size: 1.8rem;
+    @include compatible(transition,color 0.2s ease-in-out);
+    &:hover {
+      color: $post-title-hover;
+    }
+  }
+  time {
+    
+  }
+}

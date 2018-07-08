@@ -1,5 +1,5 @@
-// ========== global variables ========== //
-$base-font-family : -apple-system,
+// —————————— variables —————————— //
+$site-font-family : -apple-system,
 BlinkMacSystemFont,
 "Helvetica Neue",
 Arial,
@@ -17,3 +17,15 @@ STHeiti,
 "WenQuanYi Micro Hei",
 SimSun,
 sans-serif;
+
+// —————————— layout —————————— //
+$content-inner-bgcolor: snow;
+
+// —————————— header —————————— //
+$header-h1-color: white;
+$header-text-color: snow;
+
+// —————————— posts —————————— //
+$post-title: #333333;
+$post-title-hover: #2ac3ff;
+$post-sub-text: #666666;

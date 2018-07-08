@@ -1,0 +1,31 @@
+body {
+  width: 100%;
+  font-family: $site-font-family;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 150%;
+}
+hr {
+  position: relative;
+  margin: 2rem auto;
+  width: 100%;
+  border: 2px dashed #666666;
+  background: #ffffff;
+  height: 0;
+  overflow: visible;
+  display: block;
+}
+
+// layout
+#content-outer {
+  background-color: $content-inner-bgcolor;
+  width: 100%;
+}
+#content-inner {
+  width: 70%;
+  padding: 4rem;
+  margin: auto;
+}

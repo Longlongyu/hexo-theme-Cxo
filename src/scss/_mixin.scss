@@ -1,0 +1,24 @@
+@mixin flexBox($display: flex,$justify-content: center,$align-items: center,$flex-direction: row,$flex-wrap: nowrap,$flex: 0 1 auto){
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+  flex: $flex;
+}
+
+@mixin position($position: absolute,$top: auto,$left: auto,$right: auto,$bottom: auto) {
+  position: $position;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+
+@mixin compatible($tag,$attribute) {
+  -webkit-#{$tag}: $attribute;
+  -moz-#{$tag}: $attribute;
+  -o-#{$tag}: $attribute;
+  -ms-#{$tag}: $attribute;
+  $tag: $attribute;
+}
