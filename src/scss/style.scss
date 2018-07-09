@@ -7,5 +7,9 @@
 
 // partial
 @import '_compontents/_partial/_header';
-
+@import '_compontents/_partial/_nav';
 @import '_compontents/_partial/_recent-posts';
+@import '_compontents/_partial/_tag';
+@import '_compontents/_partial/_page-nav';
+//post
+@import '_compontents/_post/_code';

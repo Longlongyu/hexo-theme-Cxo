@@ -12,5 +12,5 @@ block content
           a(href=url_for(article.path))= article.title || 'No Title'
         time(datetime=date_xml(article.date))= date(article.date)
     - })
-  div!= paginator()
+  include includes/partial/page-nav.pug
 

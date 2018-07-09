@@ -17,20 +17,12 @@ else if (is_archive())
 else 
   - bgURL = theme.site_header_image
 - let bgStyle =  `background-image: url(${bgURL});`
-#menu-outer(style= introStyle)
-  .menu-intro-img(style=bgStyle)
+header#cxo-intro(style= introStyle + bgStyle)
+  include nav.pug
   - if (is_post()){
     h1.post-title= page.title
-
   - } else {
     h1= theme.main_title || config.title
-    p= theme.subtitle
+    h5= theme.subtitle
   - }
-  nav#menu-inner
-    .menu-nav
-      .menu-title
-        a(href='/')= theme.main_title || config.title
-      .menu-label-box
-        each url, label in theme.menu
-          a(href=url)= label
     

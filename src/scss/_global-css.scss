@@ -10,7 +10,7 @@ h1 {
 }
 hr {
   position: relative;
-  margin: 2rem auto;
+  margin: 1rem auto;
   width: 100%;
   border: 2px dashed #666666;
   background: #ffffff;
@@ -18,13 +18,20 @@ hr {
   overflow: visible;
   display: block;
 }
+img {
+  width: 100%;
+}
 
+// clear float
+.clear {
+  clear: both;
+}
 // layout
-#content-outer {
+#cxo-content-outer {
   background-color: $content-inner-bgcolor;
   width: 100%;
 }
-#content-inner {
+#cxo-content-inner {
   width: 70%;
   padding: 4rem;
   margin: auto;

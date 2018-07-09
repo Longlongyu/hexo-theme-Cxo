@@ -1,0 +1,8 @@
+nav#cxo-intro-nav
+  section
+    .intro-nav-title
+      a(href='/')= theme.main_title || config.title
+    .intro-nav-label-box
+      each url, label in theme.menu
+        a(href=url)= label
+    .clear

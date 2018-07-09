@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/js/fancybox.js":
+/*!****************************!*\
+  !*** ./src/js/fancybox.js ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function () {\n  document.querySelectorAll('.recent-post-content img,.article-entry img').forEach(function (img) {\n    var outer = img.outerHTML;\n    var imgSrc = /src=\"(.*)\"/.exec(outer) && /src=\"(.*)\"/.exec(outer)[1];\n    var imgAlt = /alt=\"(.*)\"/.exec(outer) && /alt=\"(.*)\"/.exec(outer)[1];\n    img.outerHTML = '<a class=\"fancy-link\" href=\"' + imgSrc + '\" data-fancybox=\"group\" data-caption=\"' + imgAlt + '\">' + outer + '<div class=\"img-alt\">' + imgAlt + '</div></a>';\n  });\n};\n\n//# sourceURL=webpack:///./src/js/fancybox.js?");
+
+/***/ }),
+
 /***/ "./src/js/init.js":
 /*!************************!*\
   !*** ./src/js/init.js ***!
@@ -106,7 +118,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _init = __webpack_require__(/*! ./init */ \"./src/js/init.js\");\n\nvar _init2 = _interopRequireDefault(_init);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar i = (0, _init2.default)();\nconsole.log(i);\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("\n\nvar _init = __webpack_require__(/*! ./init */ \"./src/js/init.js\");\n\nvar _init2 = _interopRequireDefault(_init);\n\nvar _fancybox = __webpack_require__(/*! ./fancybox */ \"./src/js/fancybox.js\");\n\nvar _fancybox2 = _interopRequireDefault(_fancybox);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar i = (0, _init2.default)();\nconsole.log(i);\n\n(0, _fancybox2.default)();\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ }),
 

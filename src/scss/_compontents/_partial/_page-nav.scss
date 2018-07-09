@@ -1,0 +1,22 @@
+.cxo-page-nav {
+  width: 100%;
+  text-align: center;
+  .page-number,.extend{
+    color: $page-nav-color;
+    display: inline-block;
+    margin: 0 .2rem;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+    cursor: pointer;
+    &:hover:not(.current) {
+      color: $page-nav-curr-color;
+    }
+  }
+  .current {
+    background: $page-nav-curr-color !important;
+    color: white;
+    cursor: default;
+  }
+}

@@ -1,0 +1,26 @@
+#cxo-intro-nav {
+  width: 100%;
+  padding: 1rem 0;
+  @include position($position: fixed, $top: 0);
+  >section {
+    width: 70%;
+    margin: auto;
+    .intro-nav-title {
+      margin-left: 2rem;
+      float: left;
+      >a {
+        font-size: 1.2rem;
+        font-weight: 700; 
+        color: $header-text-color;
+      }
+    }
+    .intro-nav-label-box {
+      margin-right: 2rem;
+      float: right;
+      >a {
+        color: $header-text-color;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

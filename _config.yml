@@ -30,8 +30,8 @@ about_header_image:
 favicon: /favicon.ico
 # truncate length of abstracts in index page (the default is 300, there will be no abstruct if you input 0)
 truncate_length: 
-# intro height (the default is 60 percents of the screen)
-intro_height: 60
+# intro height (the default is 70 percents of the screen)
+intro_height: 70
 
 # —————————— Others —————————— #
 # main menu navigation
@@ -42,7 +42,7 @@ menu:
   Archives: /archives
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/style.css
+- /css/style.css?v=2018.7.9
 # scripts loaded in the end of the body
 scripts:
-- /js/main.js
+- /js/main.js?v=2018.7.9

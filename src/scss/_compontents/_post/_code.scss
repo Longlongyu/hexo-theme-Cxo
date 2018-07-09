@@ -1,0 +1,236 @@
+
+
+
+// ========== code style ========== //
+.recent-post-content,
+.article-entry {
+    // ========== toggle ========== //
+    img {
+        display: block;
+        max-width: 100%;
+        margin: 1rem auto 1rem;
+        box-shadow: 0 0 4px 2px rgba(0,0,0,0.2);
+    }
+    a {
+        color: #999999;
+        text-align: center;
+        &:focus {
+            outline: none !important;
+        }
+        &:hover {
+            color: $main-color;
+        }
+    }
+    pre,
+    .highlight {
+        margin: 0.8rem 0;
+        padding: 0.7rem 0.7rem;
+        overflow: auto;
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+    .highlight .gutter pre,
+    .highlight .gutter pre .line,
+    .gist .gist-file .gist-data .line-numbers {
+        color: #666;
+    }
+    pre,
+    code {
+        font-family: "Source Code Pro",
+        Consolas,
+        Menlo,
+        Monaco,
+        "Courier New",
+        monospace;
+        font-weight: 400;
+    }
+    code {
+        background: #eee;
+        padding: 1px 0.4rem;
+        border-radius: 2px;
+        margin: 0 0.2rem;
+        border: none;
+    }
+    pre code {
+        background: none;
+        text-shadow: none;
+        padding: 0;
+        color: #657b83;
+    }
+    .highlight {
+        border-radius: 4px;
+    }
+    .highlight pre {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+    .highlight table {
+        margin: 0;
+        width: auto;
+    }
+    .highlight td {
+        border: none;
+        padding: 0;
+    }
+    .highlight figcaption {
+        color: highlight-comment;
+        line-height: 1em;
+        margin-bottom: 1em;
+    }
+    .highlight figcaption:before,
+    .highlight figcaption:after {
+        content: "";
+        display: table;
+    }
+    .highlight figcaption:after {
+        clear: both;
+    }
+    .highlight figcaption a {
+        float: right;
+    }
+    .highlight .gutter pre {
+        text-align: right;
+        padding-right: 20px;
+    }
+    .highlight .gutter pre .line {
+        text-shadow: none;
+    }
+    .highlight .line {
+        color: #657b83;
+        min-height: 19px;
+    }
+    
+    // ========== light color ========== //
+    .highlight,
+    pre {
+        background: #fdf6e3;
+        color:#657b83;
+    }
+    .highlight {
+        pre .comment,
+        pre .quote {
+            color: #93a1a1;
+        }
+
+        /* Solarized Green */
+
+        pre .keyword,
+        pre .selector-tag,
+        pre .addition {
+            color: #859900;
+        }
+
+        /* Solarized Cyan */
+
+        pre .number,
+        pre .string,
+        pre .meta .meta-string,
+        pre .literal,
+        pre .doctag,
+        pre .regexp {
+            color: #2aa198;
+        }
+
+        /* Solarized Blue */
+
+        pre .title,
+        pre .section,
+        pre .name,
+        pre .selector-id,
+        pre .selector-class {
+            color: #268bd2;
+        }
+
+        /* Solarized Yellow */
+
+        pre .attribute,
+        pre .attr,
+        pre .variable,
+        pre .template-variable,
+        pre .class .title,
+        pre .type {
+            color: #b58900;
+        }
+
+        /* Solarized Orange */
+
+        pre .symbol,
+        pre .bullet,
+        pre .subst,
+        pre .meta,
+        pre .meta pre .keyword,
+        pre .selector-attr,
+        pre .selector-pseudo,
+        pre .link {
+            color: #cb4b16;
+        }
+
+        /* Solarized Red */
+
+        pre .built_in,
+        pre .deletion {
+            color: #dc322f;
+        }
+
+        pre .formula {
+            background: #eee8d5;
+        }
+
+        pre .emphasis {
+            font-style: italic;
+        }
+
+        pre .strong {
+            font-weight: bold;
+        }
+
+    } // ========== gist ========== //
+    .gist {
+        margin: 0 -20px;
+        border-style: solid;
+        border-color: #ddd;
+        border-width: 1px 0;
+        background: #272822;
+        padding: 15px 20px 15px 0;
+    }
+    .gist .gist-file {
+        border: none;
+        font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+        margin: 0;
+    }
+    .gist .gist-file .gist-data {
+        background: none;
+        border: none;
+    }
+    .gist .gist-file .gist-data .line-numbers {
+        background: none;
+        border: none;
+        padding: 0 20px 0 0;
+    }
+    .gist .gist-file .gist-data .line-data {
+        padding: 0 !important;
+    }
+    .gist .gist-file .highlight {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .gist .gist-file .gist-meta {
+        background: #272822;
+        color: highlight-comment;
+        font: 0.85em "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-shadow: 0 0;
+        padding: 0;
+        margin-top: 1em;
+        margin-left: 20px;
+    }
+    .gist .gist-file .gist-meta a {
+        color: #258fb8;
+        font-weight: normal;
+    }
+    .gist .gist-file .gist-meta a:hover {
+        text-decoration: underline;
+    }
+}
+

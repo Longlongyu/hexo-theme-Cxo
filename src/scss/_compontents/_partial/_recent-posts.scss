@@ -5,6 +5,8 @@
 }
 .recent-post-item {
   color: $post-sub-text;
+
+  margin-bottom: 2rem;
 }
 .post-title {
   display: block;
@@ -26,5 +28,16 @@
 .recent-post-abstract {
   font-size: 1.2rem;
   @include position($position: relative);
-  @include compatible(transition,all .1s);
+  @include compatible(transition,all .2s ease-in-out);
+  &:hover {
+    padding: 0 0.5rem;
+    background-color: $post-sub-text;
+    >p {
+      color: white;
+    }
+  }  
+}
+.recent-post-tags {
+  padding-top: 1rem;
+  text-align: end;
 }

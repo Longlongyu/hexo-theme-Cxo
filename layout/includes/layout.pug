@@ -17,16 +17,19 @@ html(lang=config.language)
         link(rel='stylesheet', href=url)
     link(rel="icon", href=config.root + 'img/favicon.png')
     link(rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css?version=1.5.6")
+    // fancybox
+    link(rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer)
   body
     include partial/header.pug
-    #content-outer
-      #content-inner
+    article#cxo-content-outer
+      section#cxo-content-inner
         if body
           div!= body
         else
           block content
-    #bottom-outer
-      #bottom-inner
+    footer#cxo-footer-outer
+      #cxo-footer-inner
         span Site construction by
         a(href='http://hexo.io')
           span Hexo
@@ -39,3 +42,5 @@ html(lang=config.language)
       //- scripts list from config.yml
       each url in theme.scripts
         script(src=url)
+    script(src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js")

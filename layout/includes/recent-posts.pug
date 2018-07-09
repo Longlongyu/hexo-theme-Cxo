@@ -2,7 +2,7 @@
   let truncateLength = typeof theme.truncate_length === 'number' ? theme.truncate_length : 300
 
 if page.posts.length > 0
-  #recent-posts
+  section#recent-posts
     each post in page.posts.sort('date', -1).limit(10).toArray()
       .recent-post-item
         .post-title

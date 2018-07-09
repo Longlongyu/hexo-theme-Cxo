@@ -1,0 +1,30 @@
+.post-tag {
+  font-size: 1rem;
+  position: relative;
+  color: $post-tag;
+  margin-left: 0.3rem;
+  font-weight: lighter;
+  border: 2px solid $post-tag;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  &::after {
+    content: '';
+    position: absolute;
+    left: calc((100% - 98%) / 2);
+    bottom: -20%;
+    transition: all 0.15s ease-in;
+    width: 98%;
+    height: 3px;
+    transform: translate(0, 0);
+    background-color: $post-tag;
+    opacity: 0;
+  }
+  &:hover {
+    color: white;
+    background-color: $post-tag;
+    &::after{
+      opacity: 1;
+    }
+  }
+}
+  
