@@ -1,0 +1,21 @@
+section#cxo-profile
+  .profile-avatar
+    i.fa.fa-caret-left
+    img(src=url_for(theme.avatar))
+  //
+    .profile-saying
+      i.fa.fa-comment
+      .saying
+  .cxo-profile-inner
+    .profile-name= theme.author || config.author
+    if(theme.signature && theme.signature.length !== 0)
+      .profile-signature=  theme.signature
+    if(theme.friends)
+      .friends
+        div FRIENDS
+        - for (name in theme.friends) {
+          if(theme.friends[name])
+            span
+              a(href=theme.friends[name] target="_black")= name
+        - }
+    .read-progress

@@ -1,29 +1,32 @@
-- 
-  let truncateLength = typeof theme.truncate_length === 'number' ? theme.truncate_length : 300
-
 if page.posts.length > 0
   section#recent-posts
     each post in page.posts.sort('date', -1).limit(10).toArray()
       .recent-post-item
+        - let link = post.link || post.path
         .post-title
-          a(href=config.root + post.path)= post.title
-        if post.date
+          a(href=url_for(link))= post.title || _p('no_title')
+        - if (post.date) {
           .post-time
             i.fa.fa-table
             time(datetime=post.date.toJSON())=  date(post.date, date_format)
-        .recent-post-abstract
-          p.fa.fa-chain #{post.abstract}
-        - let _content = null
-        - if (post.excerpt) {
-          - _content = post.excerpt
-        - }else {
-          - _content = truncateLength === 0 ? null : truncate(post.content,{length: truncateLength, omission: '...'})
         - }
-        div.recent-post-content
-          p!= _content
+        if (post.abstract)
+          .recent-post-abstract
+            p.fa.fa-chain #{post.abstract}
+        - let truncateLength = typeof theme.truncate_length === 'number' ? theme.truncate_length : 300
+        if post.excerpt
+          .recent-post-content!= post.excerpt
+        else if truncateLength
+          - const content = strip_html(post.content)
+          - let expert = content.substring(0, truncateLength) 
+          - content.length > truncateLength ? expert += ' ...' : ''
+          .recent-post-content!= expert
         - if (post.tags.length>0) {
-          div.recent-post-tags!= partial('./includes/partial/tag',{currPost: post})
+          div.recent-post-tags!= partial('./includes/partial/tag',{currPost: post,className: 'post-tag'})
         - }
+        .read-more
+          a.more(href=url_for(link) + '#more')= _p('ReadMore')
         hr
+      
         
 

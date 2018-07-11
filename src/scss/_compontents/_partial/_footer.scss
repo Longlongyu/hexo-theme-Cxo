@@ -1,0 +1,13 @@
+#cxo-footer-outer {
+  text-align: center;
+  padding: $footer-height/3 0;
+  background: $footer-background;
+  color: white;
+  a {
+    color: $main-color;
+  }
+  i {
+    margin-right: 0.2rem;
+  }
+}
+

@@ -1,15 +1,18 @@
 // reset
 @import '_normalize';
 // basis
+@import '_mixin';
 @import '_variables';
 @import '_global-css';
-@import '_mixin';
+
 
 // partial
+@import '_compontents/_partial/_profile';
 @import '_compontents/_partial/_header';
 @import '_compontents/_partial/_nav';
 @import '_compontents/_partial/_recent-posts';
 @import '_compontents/_partial/_tag';
-@import '_compontents/_partial/_page-nav';
+@import '_compontents/_partial/_footer';
+@import '_compontents/_partial/_post-page';
 //post
 @import '_compontents/_post/_code';

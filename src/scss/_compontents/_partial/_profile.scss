@@ -1,0 +1,66 @@
+$profile-avatar-width: 10rem;
+#cxo-profile {
+  width: $profile-avatar-width;
+  position: fixed;
+  left: 1%;
+  top: 15%;
+  z-index: 2;
+}
+.profile-avatar {
+  width: $profile-avatar-width;
+  height: $profile-avatar-width;
+  border-radius: 50% 50% 5px 50%;
+  background-color: rgba($color: $profile-color, $alpha: .7);
+  padding: 0.5rem;
+  position: absolute;
+  top: 0;
+  @include compatible(transition,all .4s ease-in-out);
+  box-shadow: 0 0 8px rgba($color: $sub-color, $alpha: .7);
+  &:hover {
+    background-color: $profile-color;
+  }
+  i {
+    position: absolute;
+    bottom: .5rem;
+    right: .8rem;
+    font-size: 1.7rem;
+    @include compatible(transition,all .4s ease-in-out);
+    transform-origin: center;
+    transform: rotate(45deg);
+    color: $text-color;
+    cursor: pointer;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  img {
+    border-radius: 50%;
+  }
+}
+
+/* .profile-saying {
+  position: absolute;
+  top: -5rem;
+  right: -$profile-avatar-width - 1rem;
+  i {
+    color: $profile-color;
+    font-size: 10rem;
+  }
+} */
+.cxo-profile-inner {
+  //background: $profile-color;
+  width: 11rem;
+  position: absolute;
+  top: $profile-avatar-width + 2rem;
+  left: 0.5rem;
+  color: $profile-color;
+  text-shadow: 0 0 8px rgba($color: $sub-color, $alpha: .9);
+}
+.profile-name {
+  font-size: 2rem;
+}
+.friends {
+  span {
+    margin-right: 0.5rem;
+  }
+}

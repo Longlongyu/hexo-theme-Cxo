@@ -1,5 +1,4 @@
 //- intro height , you can input other number in _config.yml
-- let menuOuterStyle = ''
 - let introHeight = typeof theme.intro_height === 'number' ? theme.intro_height : 60
 - let introStyle = `height: ${introHeight}vh;`
 //- site haeder image url
@@ -21,8 +20,36 @@ header#cxo-intro(style= introStyle + bgStyle)
   include nav.pug
   - if (is_post()){
     h1.post-title= page.title
+  - } else if (page.layout === '404') {
+    h1= page.title || '[404]'
+    h5= page.description
   - } else {
     h1= theme.main_title || config.title
     h5= theme.subtitle
+  - }
+  - if (is_post()){
+    .post-intros
+      .post-intro-meta
+        span.post-intro-time
+          i.post-intro-calendar.fa.fa-calendar
+          span= date(page.date, "YYYY/MM/DD")
+        if(theme.busuanzi)
+          span#busuanzi_container_page_pv.busuanzi-pv
+            i.post-intro-calendar.fa.fa-user-o
+            span#busuanzi_value_page_pv
+        if(page.tags.length) 
+          span.post-intro-tags!= partial('./includes/partial/tag', {currPost: page,className: 'intro-tag'})
+      if(theme.reading_info)
+        .post-intro-read
+          span 
+            | Word count: 
+            span.post-count= wordcount(page.content)
+            |  | Reading time: 
+            span.post-count= min2read(page.content)
+            | min
+  - }
+  - if (!is_post()){
+    .intro-social
+      include social.pug
   - }
     

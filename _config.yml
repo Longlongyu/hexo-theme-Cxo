@@ -2,11 +2,24 @@
 # language
 language: cn
 # avatar
-avatar:
+avatar: img/assets/Misaka.jpg
 # author
-author:
+author: longlongyu
 # signature
-signature:
+signature: for me
+# friends
+friends:
+  friendA: //github.com/Longlongyu
+  friendB: //github.com/Longlongyu
+  friendC: //github.com/Longlongyu
+# SNS
+social:
+  email: Longlongyuu@foxmail.com
+  github: //github.com/Longlongyu
+  weibo: 1
+  facebook: 1
+  twitter: 1
+  rss: /atom.xml
 
 # ========== Site ========== #
 # title of the site
@@ -28,11 +41,22 @@ about_header_image:
 # —————————— Indivdual —————————— #
 # Miscelaneous
 favicon: /favicon.ico
+# —————————— Option —————————— #
 # truncate length of abstracts in index page (the default is 300, there will be no abstruct if you input 0)
 truncate_length: 
 # intro height (the default is 70 percents of the screen)
 intro_height: 70
-
+# enable toc
+toc: true
+# word count & reading time
+reading_info: true
+# enable Busuanzi analytics
+busuanzi: true
+# copyright
+copyright:
+  enable: true
+  # https://creativecommons.org/
+  license: All articles in this blog are licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/3.0">CC BY-NC-SA 3.0</a> unless stating additionally.
 # —————————— Others —————————— #
 # main menu navigation
 menu:

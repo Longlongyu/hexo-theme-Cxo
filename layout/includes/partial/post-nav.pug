@@ -1,0 +1,12 @@
+.post-paginator
+  if (page.prev)
+    a.prevSlogan(href=url_for(page.prev.path) title=page.prev.title)
+      span < PreviousPost
+      br
+      span.prevTitle= page.prev.title || '[Untitled Post]'
+  if (page.next)   
+    a.nextSlogan(href=url_for(page.next.path) title=page.next.title)
+      span NextPost >
+      br
+      span.nextTitle= page.next.title || '[Untitled Post]'
+  .clear

@@ -17,22 +17,39 @@ STHeiti,
 "WenQuanYi Micro Hei",
 SimSun,
 sans-serif;
+$feature-font-family: 'Oswald-Regular';
+
 
 // —————————— layout —————————— //
 $content-inner-bgcolor: snow;
 $main-color: #2ac3ff; 
+$text-color: #333333;
+$sub-color: #777777;
+$sub2-color: #999999;
+$sub3-color: #b6b6b6;
+$recent-posts-width: 80%;
+
+// —————————— header —————————— //
+$profile-color: snow;
 
 // —————————— header —————————— //
 $header-h1-color: #2ac3ff;
 $header-text-color: snow;
 $menu-inner-bgcolor: #20232a;
-
+$header-height: 3.5rem;
 // —————————— posts —————————— //
 $post-title: #333333;
 $post-title-hover: #2ac3ff;
 $post-sub-text: #777777;
-$post-tag: #aaaaaa;
+$post-tag: #777777;
+$height-light-bar: #1f1f2b;
+$height-light-bg: #2c2a47;
 
 // —————————— page-nav —————————— //
 $page-nav-color: #777777;
 $page-nav-curr-color: #2ac3ff;
+
+// —————————— footer —————————— //
+$footer-height: 10rem;
+$footer-background: #333333;
+

@@ -10,17 +10,75 @@
   background-position: center top;
   >h1 {
     width: 100%;
-    font-size: 400%;
+    font-size: 300%;
     text-align: center;
     color: $header-text-color;
-    margin-bottom: 0;
+    margin: 0;
     text-decoration: underline;
   }
   
   >h5 {
+    margin: 1rem;
     font-weight: 500;
     font-size: 1.5rem;
     color: $header-text-color;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+}
+// socials
+.intro-social {
+  width: 100%;
+  text-align: center;
+  >a {
+    height: 1rem;
+    width: 1rem;
+    color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    transform-origin: center;
+    @include compatible(transition,all .5s ease-in-out);
+    &:hover {
+      border: 1px solid $main-color;
+      color: $main-color;
+      transform: rotate(-360deg);
+    }
+  }
+}
+
+// post
+.post-intro-read {
+  color: white;
+  font-size: 0.8rem;
+}
+.post-intro-meta {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  >span {
+    >i {
+      margin-right: 0.2rem;
+    }
+    &:not(:last-of-type)::after {
+      content: ' | ';
+    }
+  }
+}
+.post-intros {
+  margin-top: 1.5rem;
+  opacity: 1;
+  transition: all 0.5s ease-out 0.5s;
+  transform: translate3d(0, -1rem, 0);
+  text-align: center;
+}
+.post-intro-tags {
+  font: 1.2rem $feature-font-family;
+  .intro-tag {
+    font-size: 1rem;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0.5rem;
+    color: white;
   }
 }

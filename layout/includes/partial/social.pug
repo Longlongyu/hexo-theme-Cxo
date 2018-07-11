@@ -1,0 +1,7 @@
+if(theme.social)
+  - for (name in theme.social)
+    if (theme.social[name] !== null)
+      if (name === "email")
+        a(href=`mailto:${theme.social[name]}` class="fa fa-envelope" title=name)
+      else 
+        a(href=theme.social[name] class=`fa fa-${name}` target="_blank" title=name)

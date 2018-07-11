@@ -1,12 +1,15 @@
 body {
+  min-height: 100%;
   width: 100%;
   font-family: $site-font-family;
 }
 a {
   text-decoration: none;
-}
-h1 {
-  font-size: 150%;
+  color: $sub-color;
+  @include compatible(transition,all .2s ease-in);
+  &:hover {
+    color: $main-color;
+  }
 }
 hr {
   position: relative;
@@ -21,7 +24,35 @@ hr {
 img {
   width: 100%;
 }
-
+h1,h2,h3,h4,h5,h6 {
+  &:hover {
+    color: $main-color;
+  }
+}
+blockquote {
+  border-left: 0.75rem solid $sub-color;
+  color: $sub-color;
+  margin-left: 0;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+del {
+  color: $sub-color;
+}
+::selection {
+  background: $main-color; 
+  color:white;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-thumb {
+  background-color: $main-color;
+}
 // clear float
 .clear {
   clear: both;

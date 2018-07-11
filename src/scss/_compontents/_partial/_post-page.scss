@@ -1,0 +1,124 @@
+.article-entry {
+  width: $recent-posts-width;
+  margin: auto;
+}
+// ———————— toc ———————— //
+.toc-wrapper {
+  display: block;
+  position: absolute;
+  top: 50vh;
+  width: 18%;
+  right: 2%;
+  overflow: hidden;
+  max-width: calc((100% - 42.8125rem - 4rem) / 2);
+  z-index: 9999;
+  margin: calc(#{$header-height} + 1rem) 0 0 0;
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.3s ease-out .0s;
+  .toc-active{
+    color: $main-color;
+  }
+}
+
+.toc-catalog {
+  color: $sub-color;
+  cursor: pointer;
+  user-select: none;
+  font: bolder 1.2rem $feature-font-family;
+  i {
+    padding-right: 0.5rem;
+  }
+  &:hover {
+      color: $main-color;
+  }
+}
+.toc,
+.toc-child {
+    padding-left: 0;
+    margin: 0 0 0 0;
+}
+.toc-wrapper {
+    &>* {
+      transform: translate(0, 0);
+      @include compatible(transition,transform 0.3s ease-out);
+      @include compatible(transition,opacity 0.3s ease-out);
+      opacity: 1;
+    }
+    ol {
+      list-style-type: none;
+      padding-left: 1rem;
+    }
+    .toc-number {
+      font-weight: bold;
+    }
+}
+.toc-hide-children {
+  &>* {
+    transform: translate(-100%, 0);
+    opacity: 0;
+  }
+  .toc-catalog {
+    display: block;
+    transform: none;
+    opacity: 1;
+  }
+}
+.toc-hide-children {
+  &>* {
+    transform: translate(-100%, 0);
+    opacity: 0;
+  }
+  .toc-catalog {
+    display: block;
+    transform: none;
+    opacity: 1;
+  }
+}
+.toc-fixed {
+  position: fixed;
+  top: 0rem !important;
+}
+.toc-slide {
+  transform: translate3d(400px, 0, 0);
+}
+.toc-hide {
+  display: none;
+}
+.toc-level-1 {
+  >a {
+    color: $sub2-color;
+  }
+  .toc-level-2 {
+    >a {
+      color: $sub3-color;
+    }
+  }
+}
+.toc-level-1,.toc-level-2 {
+  &:hover >a {
+    color: $main-color;
+
+  }
+}
+
+// .license
+.license-wrapper {
+  width: $recent-posts-width;
+  margin: 1.5rem auto;
+
+  border: 1px solid $sub3-color;
+  color: $sub-color;
+  box-shadow: 0 0 8px 0 rgba(232,237,250,.6), 0 2px 4px 0 rgba(232,237,250,.5);
+  a {
+    color: $sub2-color;
+    &:hover {
+      color: $main-color;
+    }
+  }
+  >p {
+    text-indent: 2rem;
+    >span:first-of-type {
+      font-weight: 700;
+    }
+  }
+}

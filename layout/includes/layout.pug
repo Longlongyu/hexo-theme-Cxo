@@ -1,26 +1,9 @@
 doctype html
 
-- var pageTitle = page.title || config.subtitle || ''
-- if (is_archive()) pageTitle = 'Archives'
-- if (is_tag()) pageTitle = 'Tag: ' + page.tag
-- if (is_category()) pageTitle = 'Category: ' + page.category
-- if (is_month()) pageTitle += ': ' + page.month + '/' + page.year
-- if (is_year()) pageTitle += ': ' + page.year
-- pageTitle += ' '+config.title 
 html(lang=config.language)
-  head
-    meta(charset='UTF-8')
-    title= pageTitle
-    if theme.stylesheets !== undefined && theme.stylesheets.length > 0
-      //- stylesheets list from config.yml
-      each url in theme.stylesheets
-        link(rel='stylesheet', href=url)
-    link(rel="icon", href=config.root + 'img/favicon.png')
-    link(rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css?version=1.5.6")
-    // fancybox
-    link(rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer)
+  include partial/head.pug
   body
+    include partial/profile.pug
     include partial/header.pug
     article#cxo-content-outer
       section#cxo-content-inner
@@ -28,16 +11,17 @@ html(lang=config.language)
           div!= body
         else
           block content
-    footer#cxo-footer-outer
-      #cxo-footer-inner
-        span Site construction by
-        a(href='http://hexo.io')
-          span Hexo
-        span theme 
-        a(href='https://github.com/Longlongyu/hexo-theme-Cxo')
-          span Cxo
-        br
-        a(href=config.root) Home
+    include partial/footer.pug
+    // catelog
+    if is_post() && theme.toc 
+      - let tocTop = typeof theme.intro_height === 'number' ? theme.intro_height : 60
+      - let tocStyle = `top: ${tocTop}vh;`
+      .toc-wrapper(style = tocStyle)
+        .toc-catalog
+          i.fa.fa-list 
+          span CATALOG
+        != toc(page.content, {class: 'toc', list_number: true})
+    // scripts
     if theme.scripts !== undefined && theme.scripts.length > 0
       //- scripts list from config.yml
       each url in theme.scripts
