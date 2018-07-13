@@ -4,10 +4,9 @@
   width: 100%;
   @include flexBox($flex-wrap: wrap);
   align-content: center;
-  background-size: 100% auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center top;
+  background-color: $main-color;
   >h1 {
     width: 100%;
     font-size: 300%;
@@ -16,7 +15,6 @@
     margin: 0;
     text-decoration: underline;
   }
-  
   >h5 {
     margin: 1rem;
     font-weight: 500;

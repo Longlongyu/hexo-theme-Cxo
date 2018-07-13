@@ -5,4 +5,8 @@ nav#cxo-intro-nav
     .intro-nav-label-box
       each url, label in theme.menu
         a(href=url)= label
+    i.fa.fa-bars.intro-nav-menu
+      .intro-nav-drop
+        each url, label in theme.menu
+          a(href=url)= label
     .clear

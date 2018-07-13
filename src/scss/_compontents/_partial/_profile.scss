@@ -64,3 +64,10 @@ $profile-avatar-width: 10rem;
     margin-right: 0.5rem;
   }
 }
+
+.read-progress {
+  margin-top: 1rem;
+  background-color: $main-color;
+  height: 3px;
+  width: 0;
+}

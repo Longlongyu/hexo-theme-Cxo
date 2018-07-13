@@ -1,0 +1,23 @@
+.cxo-up {
+  position: relative;
+  animation: cxo_up .5s ease-in-out;
+}
+.delay-1s {
+  animation-delay: 1s;
+}
+@keyframes cxo_up {
+  0%   {opacity: 0;top: 50rem;}
+  100% {opacity: 1;top: 0rem;}
+}
+@-webkit-keyframes cxo_up {
+  0%   {opacity: 0;top: 50rem;}
+  100% {opacity: 1;top: 0rem;}
+}
+@-moz-keyframes cxo_up {
+  0%   {opacity: 0;top: 50rem;}
+  100% {opacity: 1;top: 0rem;}
+}
+@-o-keyframes cxo_up {
+  0%   {opacity: 0;top: 50rem;}
+  100% {opacity: 1;top: 0rem;}
+}

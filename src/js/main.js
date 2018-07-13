@@ -1,7 +1,6 @@
-import init from './init'
+import scroll from './scroll'
 import fancybox from './fancybox'
 
-let i = init()
-console.log(i)
+scroll()
 
 fancybox()

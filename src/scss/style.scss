@@ -1,11 +1,9 @@
-// reset
-@import '_normalize';
 // basis
 @import '_mixin';
 @import '_variables';
+@import '_normalize';
 @import '_global-css';
-
-
+@import 'mobile';
 // partial
 @import '_compontents/_partial/_profile';
 @import '_compontents/_partial/_header';

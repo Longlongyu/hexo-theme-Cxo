@@ -2,32 +2,91 @@
 #cxo-intro-nav {
   width: 100%;
   padding: 1rem 0;
+  z-index: 5;
+  @include compatible(transition,all .4s ease-in);
   @include position($position: fixed, $top: 0);
   >section {
     width: 70%;
     margin: auto;
-    .intro-nav-title {
-      margin-left: 2rem;
-      float: left;
-      >a {
-        font-size: 1.2rem;
-        font-weight: 700; 
-        color: $header-text-color;
-        &:hover {
-          color: $main-color;
-        }
-      }
+  }
+  .main-color {
+    color: $text-color;
+    &:hover {
+      color: $main-color;
     }
-    .intro-nav-label-box {
-      margin-right: 2rem;
-      float: right;
-      >a {
-        color: $header-text-color;
-        margin-left: 0.5rem;
-        &:hover {
-          color: $main-color;
-        }
-      }
+  }
+}
+
+.intro-nav-title {
+  margin-left: 2rem;
+  float: left;
+  >a {
+    font-size: 1.2rem;
+    font-weight: 700; 
+    color: $header-text-color;
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
+.intro-nav-label-box {
+  margin-right: 2rem;
+  float: right;
+  >a {
+    color: $header-text-color;
+    margin-left: 0.5rem;
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
+
+.nav-style-two {
+  background-color: rgba($color: snow, $alpha: .8);
+  box-shadow: 0 0 4px rgba(0,0,0,.27);
+
+  >section {
+    >* a {
+      color: $text-color;
+    }
+  }
+}
+.intro-nav-menu {
+  margin-right: 2rem;
+  float: right;
+  color: white;
+  position: relative;
+  font-size: 1.4rem;
+  visibility: hidden;
+  display: none;
+  @include compatible(transition,color .4s ease-in);
+  &:hover {
+    color: $main-color;
+    .intro-nav-drop {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+.intro-nav-drop {
+  background-color: snow;
+  width: 7.5rem;
+  position: absolute;
+  right: 0;
+  top: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 0 4px rgba(0,0,0,.27);
+  @include compatible(transition,all .4s ease-in);
+  >a {
+    color: $text-color;
+    display: inline-block;
+    width: 5.5rem;
+    margin: 0;
+    padding: 1rem;
+    &:hover {
+      background-color: $main-color;
+      color: white;
     }
   }
 }
@@ -69,6 +128,7 @@
     text-align: end;
   }
   .prevSlogan,.nextSlogan {
+    width: 40%;
     cursor: pointer;
     padding: 0.7rem;
     span:first-of-type {

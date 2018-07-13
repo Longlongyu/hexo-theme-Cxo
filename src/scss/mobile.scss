@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px){
+  html {
+    max-width: 100%;
+  }
+  #cxo-intro-nav {
+    section {
+      width: 100% !important;
+      .intro-nav-label-box {
+        display: none;
+      }
+      .intro-nav-menu {
+        display: block;
+        visibility: visible;
+      }
+    }
+  }
+  #cxo-content-inner {
+    padding: 0;
+    padding-bottom: 3rem;
+    width: 95%;
+  }
+  #cxo-intro {
+    background-attachment: local;
+  }
+  #cxo-profile {
+    display: none;
+  }
+  .license-wrapper>p {
+    text-indent: 0 !important;
+  }
+  .post-paginator {
+    width: 90% !important;
+    >a {
+      font-size: 0.5rem;
+    }
+  }
+}

@@ -5,7 +5,7 @@ html(lang=config.language)
   body
     include partial/profile.pug
     include partial/header.pug
-    article#cxo-content-outer
+    article#cxo-content-outer.cxo-up
       section#cxo-content-inner
         if body
           div!= body
@@ -21,10 +21,3 @@ html(lang=config.language)
           i.fa.fa-list 
           span CATALOG
         != toc(page.content, {class: 'toc', list_number: true})
-    // scripts
-    if theme.scripts !== undefined && theme.scripts.length > 0
-      //- scripts list from config.yml
-      each url in theme.scripts
-        script(src=url)
-    script(src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js")
-    script(src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js")

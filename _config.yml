@@ -1,6 +1,6 @@
 # —————————— Profile —————————— #
 # language
-language: cn
+language: en
 # avatar
 avatar: img/assets/cat.png
 # author
@@ -30,7 +30,7 @@ main_title: Mr.Long's Blog
 subtitle: Welcome to my Blog!
 # 
 # site haeder image
-site_header_image: '/img/intro/index-bg.jpg'
+site_header_image: '/img/intro/index-bg.png'
 # post haeder image
 post_header_image:
 # 404 image
@@ -67,6 +67,7 @@ menu:
 # stylesheets loaded in the <head>
 stylesheets:
 - /css/style.css?v=2018.7.9
+- /css/animation.css?v=2018.7.9
 # scripts loaded in the end of the body
 scripts:
 - /js/main.js?v=2018.7.9

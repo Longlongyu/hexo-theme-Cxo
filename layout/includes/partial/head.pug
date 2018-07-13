@@ -21,6 +21,12 @@ head
       link(rel='stylesheet', href=url)
   link(rel="icon", href=config.root + 'img/favicon.png')
   link(rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css?version=1.5.6")
+  // scripts
+  script(src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" defer)
+  if theme.scripts !== undefined && theme.scripts.length > 0
+    //- scripts list from config.yml
+    each url in theme.scripts
+      script(src=url defer)
   // fancybox
   link(rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'")
   script(src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer)

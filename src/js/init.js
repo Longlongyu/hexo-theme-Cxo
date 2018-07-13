@@ -1,5 +1,5 @@
 
-function init () {
+function init() {
   let r = 1 + 1
   return r
 }
