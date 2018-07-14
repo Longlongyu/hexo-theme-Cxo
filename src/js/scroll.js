@@ -4,7 +4,8 @@ let scroll = function () {
     $toc = $('.toc-wrapper'),
     tocTop = $toc.css('top'),
     introHeight = $('#cxo-intro').height(),
-    $progressBar = $('.read-progress')
+    $progressBar = $('.read-progress'),
+    $goup = $('#go-up')
   // 滚动
   let previousHeight = 0,
     continueScroll = 0
@@ -68,10 +69,29 @@ let scroll = function () {
     $progressBar[0].style.width = `${readPercent}%`
   }
 
+  function findHeadPosition(scrollTop) {
+    if (isPostPage) {
+      let list = $('#post').find('h1,h2,h3,h4,h5,h6'),
+        currentId = ''
+      list.each(function () {
+        let head = $(this)
+        if (head.offset().top < scrollTop) {
+          currentId = '#' + head.attr('id')
+        }
+      })
+      let currentToc = $('.toc-link.active')
+      if (currentId && currentToc.attr('href') !== currentId) {
+        $('.toc-link').removeClass('active')
+        let _this = $('.toc-link[href="' + currentId + '"]')
+        _this.addClass('active')
+      }
+    }
+  }
+
   let navHeight = $nav.outerHeight()
-  // let tickingScroll = false
   function updateScroll(scrollTop) {
-    let upDownState = isScrollingUpOrDown(scrollTop)
+    let upDownState = isScrollingUpOrDown(scrollTop),
+      crossingState = isCrossingIntro(scrollTop)
     if (upDownState === 1) {
       $nav.css('top', -navHeight + 'px')
       // $nav.removeClass('banner-show')
@@ -82,13 +102,14 @@ let scroll = function () {
       $nav_a.removeClass('main-color')
       $nav.css('top', 0)
       $nav.removeClass('nav-style-two')
+      $goup.addClass('close')
     } else {
       $nav.addClass('nav-style-two')
       $nav_a.addClass('main-color')
+      $goup.removeClass('close')
     }
     // 如果不是post - page 以下忽略
     if (isPostPage) {
-      let crossingState = isCrossingIntro(scrollTop)
       if (crossingState === 1) {
         $toc.css('position', 'fixed')
         $toc.css('top', '0')
@@ -98,6 +119,7 @@ let scroll = function () {
       }
       // 进度条君的长度
       updateProgress(scrollTop, articleTop, articleHeight)
+      findHeadPosition(scrollTop)
     }
     // previousHeight = scrollTop
     // tickingScroll = false

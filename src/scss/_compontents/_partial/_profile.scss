@@ -5,6 +5,23 @@ $profile-avatar-width: 10rem;
   left: 1%;
   top: 15%;
   z-index: 2;
+  @include compatible(transition,all .4s ease-in-out);
+}
+#cxo-profile.profile-close {
+  left: -$profile-avatar-width;
+  .profile-avatar {
+    transform-origin: center;
+    transform: rotate(-45deg);
+    i {
+      transform: rotate(225deg);
+    }
+    img {
+      visibility: hidden;
+    }
+  }
+  .cxo-profile-inner {
+    visibility: hidden;
+  }
 }
 .profile-avatar {
   width: $profile-avatar-width;

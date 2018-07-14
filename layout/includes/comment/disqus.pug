@@ -1,0 +1,13 @@
+if(theme.comment && theme.comment.disqus_shortname)
+  #disqus_thread
+  script.
+    var unused = null;
+    var disqus_config = function () {
+      this.page.url = '!{ page.permalink }';
+      this.page.identifier = '!{ page.path }';
+      this.page.title = '!{ page.title }';
+    }
+    var d = document, s = d.createElement('script');
+    s.src = "https://" + '!{theme.comment.disqus_shortname}' +".disqus.com/embed.js";
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);

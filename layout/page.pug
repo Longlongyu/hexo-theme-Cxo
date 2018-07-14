@@ -1,7 +1,22 @@
 extends includes/layout.pug
 
 block content
-  article#page.article-entry
-    != page.content
+  if page.type === 'tags'
+    .tag-cloud
+      .tag-cloud__title Tag
+        |  - 
+        span.tag-cloud__amount= site.tags.length
+      .tag-cloud-tags!= tagcloud({min_font: 14, max_font: 30, amount: 200, color: true, start_color: '#A4D8FA', end_color: '#2ac3ff'})
+  else if page.type === 'categories'
+    #post-content
+      .category
+        .category__title Category
+          |  - 
+          span.category__amount= site.categories.length
+        div!= list_categories()
+  else
+    article#page
+      h1= page.title
+      .article-container!= page.content
   include includes/partial/page-nav.pug
 

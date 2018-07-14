@@ -19,9 +19,10 @@ head
     //- stylesheets list from config.yml
     each url in theme.stylesheets
       link(rel='stylesheet', href=url)
-  link(rel="icon", href=config.root + 'img/favicon.png')
+  link(rel="icon", href=url_for(theme.favicon))
   link(rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css?version=1.5.6")
   // scripts
+  include preload.pug
   script(src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" defer)
   if theme.scripts !== undefined && theme.scripts.length > 0
     //- scripts list from config.yml

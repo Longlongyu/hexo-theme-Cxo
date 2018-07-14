@@ -1,0 +1,100 @@
+#archive, #category, #tag {
+  padding: 3rem 0 3rem;
+  width: 80%;
+  margin: auto;
+}
+
+.tag-cloud,.category {
+  padding: 4rem 0 6rem;
+  text-align: center;
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0 1rem;
+  }
+  a {
+    margin: 0 .4rem;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      color: rgb(248, 116, 39) !important;
+    }
+  }
+}
+
+@mixin radius($width: .3rem,$left: -1rem) {
+  &:hover {
+    &::before {
+      border: $width/2 solid $main-color;
+    }
+  }
+  &::before {
+    position: absolute;
+    top: .2rem;
+    left: $left;
+    z-index: 1;
+    width: $width;
+    height: $width;
+    border: $width/2 solid $text-color;
+    border-radius: $width;
+    background: #fff;
+    content: "";
+    line-height: $width;
+    @include compatible(transition,all 0.2s ease-in-out);
+  }
+}
+
+.article-sort {
+  padding-left: 1rem;
+  border-left: .1rem solid $sub-color;
+  @at-root {
+    &-title {
+      position: relative;
+      padding-bottom: 1.2rem;
+      padding-left: 1rem;
+      font-size: 1.5rem;
+      line-height: 1;
+      font-weight: 500;
+      @include radius($width: .5rem,$left: -0.5rem);
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        width: .1rem;
+        height: 1.5rem;
+        background: $sub-color;
+        content: "";
+      }
+    }
+    &-item {
+      margin-bottom: 1rem;
+      position: relative;
+      @include radius($width: .4rem,$left: -1.5rem);
+      @at-root &.year {
+        font-size: 1.2rem;
+        color: $text-color;
+        &:hover {
+          &::before {
+            border-color: $text-color;
+          }
+        }
+        &::before {
+          border-color: $main-color;
+        }
+      }
+      &__time {
+        color: $sub-color;
+      }
+      &__title {
+        color: #444444;
+        margin-left: 3rem;
+        cursor: pointer;
+        &:hover {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
+  

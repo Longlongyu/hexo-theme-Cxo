@@ -57,6 +57,26 @@ del {
 .clear {
   clear: both;
 }
+// go-up
+#go-up {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 2px solid $text-color;
+  background-color: $text-color;
+  color: snow;
+  @include compatible(transition,all .4s ease-in-out);
+  cursor: pointer;
+  &:hover {
+    border: 2px solid $main-color;
+    color: $main-color;
+  }
+}
+#go-up.close {
+  right: -3rem;
+}
 // layout
 #cxo-content-outer {
   background-color: $content-inner-bgcolor;

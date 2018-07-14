@@ -9,6 +9,9 @@
     width: 70%;
     margin: auto;
   }
+  .intro-nav-menu {
+    display: none;
+  }
   .main-color {
     color: $text-color;
     &:hover {
@@ -58,7 +61,6 @@
   position: relative;
   font-size: 1.4rem;
   visibility: hidden;
-  display: none;
   @include compatible(transition,color .4s ease-in);
   &:hover {
     color: $main-color;
@@ -128,7 +130,7 @@
     text-align: end;
   }
   .prevSlogan,.nextSlogan {
-    width: 40%;
+    width: 42%;
     cursor: pointer;
     padding: 0.7rem;
     span:first-of-type {

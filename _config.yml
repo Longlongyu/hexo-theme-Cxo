@@ -16,9 +16,9 @@ friends:
 social:
   email: Longlongyuu@foxmail.com
   github: //github.com/Longlongyu
-  weibo: 1
-  facebook: 1
-  twitter: 1
+  weibo: //www.weibo.com
+  facebook: //www.facebook.com
+  twitter: //twitter.com
   rss: /atom.xml
 
 # ========== Site ========== #
@@ -28,7 +28,6 @@ SEO_title: Mr.Long's Blog
 main_title: Mr.Long's Blog
 # subtitle
 subtitle: Welcome to my Blog!
-# 
 # site haeder image
 site_header_image: '/img/intro/index-bg.png'
 # post haeder image
@@ -40,7 +39,7 @@ about_header_image:
 
 # —————————— Indivdual —————————— #
 # Miscelaneous
-favicon: /favicon.ico
+favicon: /img/assets/favicon.ico
 # —————————— Option —————————— #
 # truncate length of abstracts in index page (the default is 300, there will be no abstruct if you input 0)
 truncate_length: 
@@ -57,13 +56,20 @@ copyright:
   enable: true
   # https://creativecommons.org/
   license: All articles in this blog are licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/3.0">CC BY-NC-SA 3.0</a> unless stating additionally.
+# comment
+comment:
+  # Livere  site: https://livere.com/
+  livere_uid:
+  # Disqus  site: https://disqus.com/
+  disqus_shortname: longlongyu
+
 # —————————— Others —————————— #
 # main menu navigation
 menu:
   Home: /
   About: /about
-  Category: /category
   Archives: /archives
+  Tags: /tags
 # stylesheets loaded in the <head>
 stylesheets:
 - /css/style.css?v=2018.7.9
