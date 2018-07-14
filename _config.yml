@@ -10,12 +10,12 @@ signature: for me
 # friends
 friends:
   friendA: //github.com/Longlongyu
-  friendB: //github.com/Longlongyu
-  friendC: //github.com/Longlongyu
+  friendB: //github.com/
+  friendC: //github.com/
 # SNS
 social:
-  email: Longlongyuu@foxmail.com
-  github: //github.com/Longlongyu
+  email: 
+  github: //github.com/
   weibo: //www.weibo.com
   facebook: //www.facebook.com
   twitter: //twitter.com
@@ -40,6 +40,7 @@ about_header_image:
 # —————————— Indivdual —————————— #
 # Miscelaneous
 favicon: /img/assets/favicon.ico
+
 # —————————— Option —————————— #
 # truncate length of abstracts in index page (the default is 300, there will be no abstruct if you input 0)
 truncate_length: 
@@ -61,7 +62,7 @@ comment:
   # Livere  site: https://livere.com/
   livere_uid:
   # Disqus  site: https://disqus.com/
-  disqus_shortname: longlongyu
+  disqus_shortname: 
 
 # —————————— Others —————————— #
 # main menu navigation
