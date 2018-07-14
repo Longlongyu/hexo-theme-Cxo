@@ -35,7 +35,7 @@ theme: Cxo
 npm install hexo-renderer-jade
 ```
 
-## 主题配置
+## 主题配置(Theme configuration)
 
 ```yaml
 # —————————— 资料 —————————— #
