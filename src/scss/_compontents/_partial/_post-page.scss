@@ -88,8 +88,8 @@
   >a {
     color: $sub2-color;
   }
-  .toc-level-2 {
-    >a {
+  @at-root .toc-level-2 {
+    a {
       color: $sub3-color;
     }
   }
