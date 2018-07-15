@@ -49,7 +49,7 @@ intro_height: 70
 # enable toc
 toc: true
 # word count & reading time
-reading_info: true
+reading_info: false
 # enable Busuanzi analytics
 busuanzi: true
 # copyright

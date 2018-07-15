@@ -1,9 +1,10 @@
 # hexo-theme-Cxo
+A cool ，simple & beautiful theme for Hexo. 🍄
 
 <img src="./source/img/demo/demo.png"/>
 
 ## 在线预览(Online demo)
-观看主题：[Mr.Long's Blog](https:://longlongyu.github.io/ "Mr.Long's Blog")
+观看主题：[Mr.Long's Blog](https://longlongyu.github.io/ "Mr.Long's Blog")
 
 ## 文档(Documentation)
 - ~~English document~~
@@ -13,7 +14,7 @@ IE >= 10
 
 ## 说明(Instruction)
 - 目前本主题刚刚创建，可能有很多不足之处，如果有任何优化和功能方面的建议和想法，都欢迎提出和指证。
-- 如果有使用上的问题，欢迎 [发起 issue](https::/github.com/Longlongyu/hexo-theme-Cxo/issues "发起 issue")
+- 如果有使用上的问题，欢迎 [发起 issue](https:/github.com/Longlongyu/hexo-theme-Cxo/issues "发起 issue")
 - 你的支持就是我的动力，我会持续的更新和维护，欢迎 star 。
 
 ## 安装(Install)
@@ -29,10 +30,10 @@ git clone -b master https://github.com/Longlongyu/hexo-theme-Cxo themes/Cxo
 theme: Cxo
 ```
 
-3. 如果你没有安装 `jade renderer`,你还要执行
+3. 如果你没有安装 `jade renderer` `sass renderer`,你还要执行
 
 ``` shell
-npm install hexo-renderer-jade
+npm install hexo-renderer-jade hexo-renderer-sass --save
 ```
 
 ## 主题配置(Theme configuration)
@@ -77,14 +78,14 @@ about_header_image:
 favicon: /img/assets/favicon.ico
 
 # —————————— Option —————————— #
-# 首页的文章摘要字数(默认300，填0则不显示摘要)
+# 首页的文章摘要字数(默认为300)
 truncate_length: 
 # banner 高度 (默认是屏幕高度的70%, 可以修改成其他数字)
 intro_height: 70
 # 文章右侧的大纲
 toc: true
-# 字数统计 & 阅读时间
-reading_info: true
+# 字数统计 & 阅读时间，
+reading_info: false
 # 开启不蒜子阅读量统计
 busuanzi: true
 # 版权声明
@@ -101,4 +102,4 @@ comment:
 ```
 
 ## License
-[MIT](https:://opensource.org/licenses/MIT "MIT")
+[MIT](https://opensource.org/licenses/MIT/ "MIT")
