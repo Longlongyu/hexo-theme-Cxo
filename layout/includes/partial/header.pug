@@ -7,12 +7,12 @@ if (is_home())
   - bgURL = theme.site_header_image
 else if (is_post())
   - bgURL = theme.post_header_image || theme.site_header_image
-else if (page.layout === '404')
-  - bgURL = theme._404_image || theme.site_header_image
+else if (is_tag())
+  - bgURL = theme.tag_header_image || theme.site_header_image
 else if (page.layout === 'about')
   - bgURL = theme.about_header_image || theme.site_header_image
 else if (is_archive())
-  - bgURL = theme.about_header_image || theme.site_header_image
+  - bgURL = theme.archive_header_image || theme.site_header_image
 else 
   - bgURL = theme.site_header_image
 - let bgStyle =  `background-image: url(${bgURL});`
@@ -20,9 +20,6 @@ header#cxo-intro(style= introStyle + bgStyle)
   include nav.pug
   - if (is_post()){
     h1.post-title= page.title
-  - } else if (page.layout === '404') {
-    h1= page.title || '[404]'
-    h5= page.description
   - } else {
     h1= theme.main_title || config.title
     h5= theme.subtitle

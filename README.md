@@ -1,4 +1,4 @@
-# hexo-theme-Cxo
+﻿# hexo-theme-Cxo
 A cool ，simple & beautiful theme for Hexo. 🍄
 
 <img src="./source/img/demo/demo.png"/>
@@ -70,7 +70,6 @@ subtitle:
 # 显示在网站的上banner图，如果不设置，默认都为site_header_image，site_header_image为必选项
 site_header_image:
 post_header_image:
-_404_image:
 about_header_image: 
 
 # —————————— Indivdual —————————— #
@@ -98,7 +97,10 @@ comment:
   # Livere  site: https://livere.com/
   livere_uid:
   # Disqus  site: https://disqus.com/
-  disqus_shortname: longlongyu
+  disqus_shortname: 
+  # Changyan  site: http://changyan.kuaizhan.com/
+  changyan_appid: 
+  changyan_conf: 
 ```
 
 ## License
