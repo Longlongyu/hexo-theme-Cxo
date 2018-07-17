@@ -1,6 +1,9 @@
 
 function init() {
-  $('#cxo-profile').removeClass('profile-close')
+  if (!sessionStorage.getItem('profile') || (sessionStorage.getItem('profile') && sessionStorage.getItem('profile') === 'true')) {
+    $('#cxo-profile').removeClass('profile-close')
+  }
+
   if ($(document).scrollTop() !== 0) {
     $('#go-up').removeClass('chose')
   }
@@ -9,8 +12,10 @@ function init() {
     let $parent = $(this).parents('#cxo-profile')
     if ($parent && !$parent.hasClass('profile-close')) {
       $parent.addClass('profile-close')
+      sessionStorage.setItem('profile', 'false')
     } else if ($parent && $parent.hasClass('profile-close')) {
       $parent.removeClass('profile-close')
+      sessionStorage.setItem('profile', 'true')
     }
   }
   // go-up收起
