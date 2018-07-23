@@ -1,14 +1,14 @@
 if page.posts.length > 0
   section#recent-posts
-    each post in page.posts.sort('date', -1).limit(10).toArray()
+    each post in page.posts.data
       .recent-post-item
         - let link = post.link || post.path
         .post-title
-          -if (post.top) {
+          - if (post.top) {
             a.fa.fa-toggle-up.stick-top(href=url_for(link))= post.title || _p('no_title')
-          -} else {
+          - } else {
             a(href=url_for(link))= post.title || _p('no_title')
-          -}
+          - }
         - if (post.date) {
           .post-time
             i.fa.fa-table
