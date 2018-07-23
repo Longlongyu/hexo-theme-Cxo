@@ -4,7 +4,11 @@ if page.posts.length > 0
       .recent-post-item
         - let link = post.link || post.path
         .post-title
-          a(href=url_for(link))= post.title || _p('no_title')
+          -if (post.top) {
+            a.fa.fa-toggle-up.stick-top(href=url_for(link))= post.title || _p('no_title')
+          -} else {
+            a(href=url_for(link))= post.title || _p('no_title')
+          -}
         - if (post.date) {
           .post-time
             i.fa.fa-table

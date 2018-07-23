@@ -131,3 +131,10 @@
   width: 80%;
   margin: auto;
 }
+
+// post
+.stick-top{
+  &::before {
+    margin-right: 0.2rem;
+  }
+}

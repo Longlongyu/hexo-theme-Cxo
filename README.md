@@ -35,6 +35,19 @@ theme: Cxo
 ``` shell
 npm install hexo-renderer-jade hexo-renderer-sass --save
 ```
+##  更新(update)
+
+- 1.0.0 - 『拥有基本博客功能的Cxo』
+- 1.0.1 - 『支持直接配置少量的评论插件』
+- 1.0.2 - 『侧栏的开关状态现在会保存了』
+- 1.0.3 - 『添加了置顶文章的显示』
+
+## 其他配置(Other configuration)
+
+- [启用 about 页](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AFabout%E9%A1%B5)
+- [启用 tags 页](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AFtags%E9%A1%B5)
+- [启用字数统计及阅读时间](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AF%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%8F%8A%E9%98%85%E8%AF%BB%E6%97%B6%E9%97%B4)
+- [启用文章置顶](https://www.jianshu.com/p/42a4efcdf8d7)
 
 ## 主题配置(Theme configuration)
 
