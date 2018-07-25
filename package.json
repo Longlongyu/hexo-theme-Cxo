@@ -1,6 +1,6 @@
 {
   "name": "Cxo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Cxo develop",
   "scripts": {
     "dev": "webpack -w --mode development",
