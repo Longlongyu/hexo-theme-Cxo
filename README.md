@@ -35,12 +35,27 @@ theme: Cxo
 ``` shell
 npm install hexo-renderer-jade hexo-renderer-sass --save
 ```
-##  更新(update)
+## 更新(Update)
 
 - 1.0.0 - 『拥有基本博客功能的Cxo』
 - 1.0.1 - 『支持直接配置少量的评论插件』
 - 1.0.2 - 『侧栏的开关状态现在会保存了』
 - 1.0.3 - 『添加了置顶文章的显示』
+
+## 主题更新(Theme Update)
+目前提供两种方法供参考:
+
+#### 1. git pull
+这个方法可能会带来合并冲突，需要您手动解决。
+
+在 **Cxo** 目录下执行 `git stash` 将本地的修改暂存，再执行 `git pull` 来获取最新的版本，
+最后执行 `git stash pop` 将本地的修改还原。如果出现合并冲突报，
+您可以参考 [这里](https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/merge-conflicts) 手动解决合并冲突。
+
+之后重新生成主题即可。
+
+#### 2. 重新下载
+备份 **Cxo** 目录下改动过的文件，之后重新安装主题后，将备份后放回原位即可。
 
 ## 其他配置(Other configuration)
 
