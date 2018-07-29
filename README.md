@@ -3,85 +3,85 @@ A cool ，simple & beautiful theme for Hexo. 🍄
 
 <img src="./source/img/demo/demo.png"/>
 
-## 在线预览(Online demo)
-观看主题：[Mr.Long's Blog](https://longlongyu.github.io/ "Mr.Long's Blog")
+<p align="center">
+<img alt="version" src="https://img.shields.io/badge/version-1.0.4-green.svg">
+<a href="https://longlongyu.github.io/"><img alt="author" src="https://img.shields.io/badge/author-longlongyu-orange.svg"/></a>
+<a href="https://hexo.io"><img alt="hexo" src="https://img.shields.io/badge/hexo-3.0+-0e83cd.svg"/></a>
+<a href="https://nodejs.org/"><img alt="license" src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
+</p>
 
-## 文档(Documentation)
-- ~~English document~~
+## Online demo
+Watch online demo：[Mr.Long's Blog](https://longlongyu.github.io/ "Mr.Long's Blog")
 
-## 浏览器支持(Browser Support)
+## Documentation
+- [中文文档](./README_CN.md)
+
+## Browser Support
 IE >= 10
 
-## 说明(Instruction)
-- 目前本主题刚刚创建，可能有很多不足之处，如果有任何优化和功能方面的建议和想法，都欢迎提出和指证。
-- 如果有使用上的问题，欢迎 [发起 issue](https:/github.com/Longlongyu/hexo-theme-Cxo/issues "发起 issue")
-- 你的支持就是我的动力，我会持续的更新和维护，欢迎 star 。
+## Instruction
+- Cxo is my first time to make Hexo theme, if you have any suggestions and ideas for optimization and functionality，please tell me, I will correct them。
+- You are welcomed to create a new [issue](https:/github.com/Longlongyu/hexo-theme-Cxo/issues "new issue"). If there is any problem when installling and using this theme.
+- Your support is my motivation, so I will keep updating, star it if you like it 。
 
-## 安装(Install)
-1. 在 **hexo** 的根目录执行
+## Install
+1. Execute the following commands in **Hexo directory**.
 
 ``` shell
 git clone -b master https://github.com/Longlongyu/hexo-theme-Cxo themes/Cxo
 ```
 
-2. 修改 **hexo** 的根目录下的 `_config.yml` 的 `theme` 字段为 `Cxo`
+2. Change the `theme` property to `Cxo` of `_config.yml` in **Hexo directory**.
 
 ``` yaml
 theme: Cxo
 ```
 
-3. 如果你没有安装 `jade renderer` `sass renderer`,你还要执行
+3. If you don't have `jade renderer` `sass renderer`, follow this:
 
 ``` shell
 npm install hexo-renderer-jade hexo-renderer-sass --save
 ```
-## 更新(Update)
 
-- 1.0.0 - 『拥有基本博客功能的Cxo』
-- 1.0.1 - 『支持直接配置少量的评论插件』
-- 1.0.2 - 『侧栏的开关状态现在会保存了』
-- 1.0.3 - 『添加了置顶文章的显示』
-- 1.0.4 - 『现在可以显示文章的最近修改时间，并根据其排序』
+## Version
 
-## 主题更新(Theme Update)
-目前提供两种方法供参考:
+- 1.0.0 - 『Have basic blogging features』
+- 1.0.1 - 『Added some comment plugins』
+- 1.0.2 - 『The switch status of the sidebar is now saved.』
+- 1.0.3 - 『Added display of pinned articles』
+- 1.0.4 - 『Display article recent modification time』
 
-#### 1. git pull
-这个方法可能会带来合并冲突，需要您手动解决。
+## Theme Update
+Jump into the Cxo folder, follow this:
 
-在 **Cxo** 目录下执行 `git stash` 将本地的修改暂存，再执行 `git pull` 来获取最新的版本，
-最后执行 `git stash pop` 将本地的修改还原。如果出现合并冲突报，
-您可以参考 [这里](https://www.git-tower.com/learn/git/ebook/cn/command-line/advanced-topics/merge-conflicts) 手动解决合并冲突。
+``` shell
+git pull
+```
 
-之后重新生成主题即可。
+## Other configuration
 
-#### 2. 重新下载
-备份 **Cxo** 目录下改动过的文件，之后重新安装主题后，将备份后放回原位即可。
+- [Enable about page](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AFabout%E9%A1%B5)
+- [Enable tags page](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AFtags%E9%A1%B5)
+- [Enable word count and reading time](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AF%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%8F%8A%E9%98%85%E8%AF%BB%E6%97%B6%E9%97%B4)
+- [Enable article top](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6)
+- [Enable article most modified time](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E6%9C%80%E8%BF%91%E4%BF%AE%E6%94%B9%E6%97%B6%E9%97%B4)
 
-## 其他配置(Other configuration)
-
-- [启用 about 页](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AFabout%E9%A1%B5)
-- [启用 tags 页](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AFtags%E9%A1%B5)
-- [启用字数统计及阅读时间](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AF%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%8F%8A%E9%98%85%E8%AF%BB%E6%97%B6%E9%97%B4)
-- [启用文章置顶](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6)
-- [启用文章最修改时间](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E6%9C%80%E8%BF%91%E4%BF%AE%E6%94%B9%E6%97%B6%E9%97%B4)
-
-## 主题配置(Theme configuration)
+## Theme configuration
 
 ```yaml
-# —————————— 资料 —————————— #
-# 填写头像的路径
+# —————————— Profile Column —————————— #
+# Avatar
 avatar:
-# 博主名字
+# Author
 author:
-# 博客的签名
+# Signature
 signature:
-# 友链
+# Links 
 friends:
   friendA:
   friendB:
   friendC:
-# 社交账号
+# Social information
 social:
   email:
   github:
@@ -90,41 +90,41 @@ social:
   twitter:
   rss:
 
-# —————————— 站点 —————————— #
-# 网站的title，每篇文章后面也会加上此字段利于SEO
+# —————————— Site —————————— #
+# Title of the site (each article will be followed by this value to help SEO)
 SEO_title:
-# 显示在网站头图上的主标题
+# Main title (title in site banner)
 main_title:
-# 副标题
+# Subtitle
 subtitle:
-# 显示在网站的上banner图，如果不设置，默认都为site_header_image，site_header_image为必选项
+# Header image (image of site banner)，the default is site_header_image，site_header_image is required field
 site_header_image:
 post_header_image:
 about_header_image: 
 
 # —————————— Indivdual —————————— #
-# 标签缩略图
+# icon
 favicon: /img/assets/favicon.ico
 
 # —————————— Option —————————— #
-# 首页的文章摘要字数(默认为300)
+# truncate length of abstracts in index page (the default is 300, there will be no abstruct if you set it to 0)
 truncate_length: 
-# banner 高度 (默认是屏幕高度的70%, 可以修改成其他数字)
+# intro height (the default is 70 percents of the screen, you can input other number)
 intro_height: 70
-# 文章右侧的大纲
+# enable toc
 toc: true
-# 字数统计 & 阅读时间，
+# word count and reading time，
 reading_info: false
-# 开启不蒜子阅读量统计
+# enable busuanzi
 busuanzi: true
-# 显示最近修改时间
+# display article recent modification time
 display_updated: false
-# 版权声明
+# copyright
 copyright:
   enable: true
   # https://creativecommons.org/
   license: All articles in this blog are licensed under <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/3.0">CC BY-NC-SA 3.0</a> unless stating additionally.
-# 评论插件
+# currently support directly adding Livere, Disqus, Changyan, fill the field to enable corresponding plugin
 comment:
   # Livere  site: https://livere.com/
   livere_uid:
