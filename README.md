@@ -132,7 +132,12 @@ comment:
   disqus_shortname: 
   # Changyan  site: http://changyan.kuaizhan.com/
   changyan_appid: 
-  changyan_conf: 
+  changyan_conf:
+  # Gitment  site: https://github.com/imsun/gitment/
+  gitment_owner:
+  gitment_repo:
+  gitment_client_id:
+  gitment_client_secret:
 ```
 
 ## License
