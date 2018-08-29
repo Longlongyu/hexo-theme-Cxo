@@ -75,9 +75,9 @@ comment:
 # main menu navigation
 menu:
   Home: /
-  About: /about
-  Archives: /archives
-  Tags: /tags
+  About: /about/
+  Archives: /archives/
+  Tags: /tags/
 # stylesheets loaded in the <head>
 stylesheets:
 - /css/style.css?v=2018.7.9
