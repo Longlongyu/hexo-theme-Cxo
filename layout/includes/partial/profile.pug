@@ -9,7 +9,7 @@ section#cxo-profile.profile-close
   .cxo-profile-inner
     .profile-name= theme.author || config.author
     if(theme.signature && theme.signature.length !== 0)
-      .profile-signature=  theme.signature
+      .profile-signature!=  theme.signature
     if(theme.friends)
       .friends
         div FRIENDS
