@@ -117,6 +117,11 @@ toc: true
 reading_info: false
 # enable busuanzi
 busuanzi: true
+# Time
+# you can modify the timestamp format.
+date_format: YYYY-MM-DD
+# display created time.
+display_created: true
 # display article recent modification time
 display_updated: false
 # copyright

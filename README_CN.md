@@ -113,6 +113,11 @@ toc: true
 reading_info: false
 # 开启不蒜子阅读量统计
 busuanzi: true
+# 时间相关配置
+# 你现在可以配置时间戳格式
+date_format: YYYY-MM-DD
+# 显示文章创建时间
+display_created: true
 # 显示最近修改时间
 display_updated: false
 # 版权声明

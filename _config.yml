@@ -49,6 +49,11 @@ toc: true
 reading_info: false
 # enable Busuanzi analytics
 busuanzi: true
+# Time
+# you can modify the timestamp format.
+date_format: YYYY-MM-DD
+# display created time.
+display_created: true
 # display updated time, if the post dose not define 'updated', the system modification time will be displayed.
 display_updated: false
 # copyright

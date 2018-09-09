@@ -28,12 +28,15 @@ if page.posts.length > 0
             a(href=url_for(link))= post.title || _p('no_title')
           - }
         - if (post.date) {
+          - let format = theme.date_format ? theme.date_format : date_format
           .post-time
-            i.fa.fa-table
-            time(datetime=post.date.toJSON())=  date(post.date, date_format)
+            - if (theme.display_created) {
+              i.fa.fa-table
+              time(datetime=post.date.toJSON())=  date(post.date, format)
+            - }
             - if (theme.display_updated && post.updated) {
               i.fa.fa-edit
-              time(datetime=post.date.toJSON())=  date(post.updated, date_format)
+              time(datetime=post.date.toJSON())=  date(post.updated, format)
             - }
         - }
         if (post.abstract)
