@@ -7,9 +7,18 @@ footer#cxo-footer-outer
       span  | theme 
       a(href='https://github.com/Longlongyu/hexo-theme-Cxo')
         span Cxo
-    if (theme.busuanzi)
+    if (theme.count.busuanzi)
       i.fa.fa-user 
       span#busuanzi_value_site_uv
       span  | 
       i.fa.fa-eye 
       span#busuanzi_value_site_pv
+    if (theme.count.baidu)
+      script.
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?" + '!{theme.count.baidu}';
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
