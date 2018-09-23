@@ -4,7 +4,7 @@ A cool ，simple & beautiful theme for Hexo. 🍄
 <img src="./source/img/demo/demo.png"/>
 
 <p align="center">
-<img alt="version" src="https://img.shields.io/badge/version-1.0.4-green.svg">
+<img alt="version" src="https://img.shields.io/badge/version-1.0.5-green.svg">
 <a href="https://longlongyu.github.io/"><img alt="author" src="https://img.shields.io/badge/author-longlongyu-orange.svg"/></a>
 <a href="https://hexo.io"><img alt="hexo" src="https://img.shields.io/badge/hexo-3.0+-0e83cd.svg"/></a>
 <a href="https://nodejs.org/"><img alt="license" src="https://img.shields.io/github/license/mashape/apistatus.svg"></a>
@@ -63,6 +63,7 @@ npm install hexo-renderer-jade hexo-renderer-sass --save
 - [启用文章置顶](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6)
 - [启用文章最修改时间](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E6%9C%80%E8%BF%91%E4%BF%AE%E6%94%B9%E6%97%B6%E9%97%B4)
 - [修改时间戳格式](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E4%BF%AE%E6%94%B9%E6%97%B6%E9%97%B4%E6%88%B3%E6%A0%BC%E5%BC%8F)
+- [文章添加摘要图片](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%91%98%E8%A6%81%E5%9B%BE%E7%89%87)
 
 ## 主题配置(Theme configuration)
 
