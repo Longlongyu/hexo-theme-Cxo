@@ -37,6 +37,12 @@
   padding-left: 0;
   margin: 0 0 0 0;
 }
+.toc-link + .toc-child {
+  display: none;
+}
+.toc-link.active + .toc-child {
+  display: block;
+}
 .toc-wrapper {
   &>* {
     transform: translate(0, 0);

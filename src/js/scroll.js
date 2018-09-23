@@ -84,6 +84,7 @@ let scroll = function () {
         $('.toc-link').removeClass('active')
         let _this = $('.toc-link[href="' + currentId + '"]')
         _this.addClass('active')
+        _this.parents('.toc-child').siblings('.toc-link').addClass('active')
       }
     }
   }
