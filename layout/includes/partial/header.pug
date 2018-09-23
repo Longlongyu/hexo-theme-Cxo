@@ -28,12 +28,13 @@ header#cxo-intro(style= introStyle + bgStyle)
     .post-intros
       .post-intro-meta
         span.post-intro-time
+          - let format = theme.date_format ? theme.date_format : date_format
           - if(theme.display_updated) {
             i.post-intro-calendar.fa.fa-edit
-            span= date(page.updated, "YYYY/MM/DD")
+            span= date(page.updated, format)
           - } else {
             i.post-intro-calendar.fa.fa-calendar
-            span= date(page.date, "YYYY/MM/DD")
+            span= date(page.date, format)
           - } 
         if(theme.busuanzi)
           span#busuanzi_container_page_pv.busuanzi-pv
