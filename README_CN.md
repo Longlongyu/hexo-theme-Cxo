@@ -112,8 +112,12 @@ intro_height: 70
 toc: true
 # 字数统计 & 阅读时间，
 reading_info: false
-# 开启不蒜子阅读量统计
-busuanzi: true
+# 开启统计
+count:
+  # true or flase
+  busuanzi: true
+  # 填入百度统计的code
+  baidu: 
 # 时间相关配置
 # 你现在可以配置时间戳格式
 date_format: YYYY-MM-DD

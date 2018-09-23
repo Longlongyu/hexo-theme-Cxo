@@ -48,7 +48,14 @@ toc: true
 # word count & reading time
 reading_info: false
 # enable Busuanzi analytics
-busuanzi: true
+reading_info: true
+# access statistics
+count:
+  # enable analytics
+  # true or flase
+  busuanzi: true
+  # baidu code
+  baidu: 
 # Time
 # you can modify the timestamp format.
 date_format: YYYY-MM-DD

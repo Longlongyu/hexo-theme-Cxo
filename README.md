@@ -116,8 +116,13 @@ intro_height: 70
 toc: true
 # word count and reading time，
 reading_info: false
-# enable busuanzi
-busuanzi: true
+# access statistics
+count:
+  # enable analytics
+  # true or flase
+  busuanzi: true
+  # baidu code
+  baidu: 
 # Time
 # you can modify the timestamp format.
 date_format: YYYY-MM-DD
