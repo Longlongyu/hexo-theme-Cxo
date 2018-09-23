@@ -47,9 +47,10 @@ npm install hexo-renderer-jade hexo-renderer-sass --save
 
 - 1.0.0 - 『Have basic blogging features』
 - 1.0.1 - 『Added some comment plugins』
-- 1.0.2 - 『The switch status of the sidebar is now saved.』
+- 1.0.2 - 『The switch status of the sidebar is now saved』
 - 1.0.3 - 『Added display of pinned articles』
 - 1.0.4 - 『Display article recent modification time』
+- 1.0.5 - 『Added custom timestamps and optimized the article directory. Now, you can define summary images and add Baidu statistical』
 
 ## Theme Update
 Jump into the Cxo folder, follow this:

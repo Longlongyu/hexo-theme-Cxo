@@ -43,8 +43,13 @@ if page.posts.length > 0
           .recent-post-abstract
             p.fa.fa-chain #{post.abstract}
         - let truncateLength = typeof theme.truncate_length === 'number' ? theme.truncate_length : 300
-        if post.excerpt
-          .recent-post-content!= post.excerpt
+        if post.excerpt || (post.photos && post.photos[0])
+          - let content = ''
+          if post.photos && post.photos[0]
+            - content += '<p><img src="' + post.photos[0] + '" alt="' + post.photos[1] + '"></p>' 
+          if post.excerpt
+            - content += post.excerpt
+          .recent-post-content!= content
         else if truncateLength
           - const content = strip_html(post.content)
           - let expert = content.substring(0, truncateLength) 
