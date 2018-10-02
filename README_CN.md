@@ -64,6 +64,7 @@ npm install hexo-renderer-jade hexo-renderer-sass --save
 - [启用文章最修改时间](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E6%9C%80%E8%BF%91%E4%BF%AE%E6%94%B9%E6%97%B6%E9%97%B4)
 - [修改时间戳格式](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E4%BF%AE%E6%94%B9%E6%97%B6%E9%97%B4%E6%88%B3%E6%A0%BC%E5%BC%8F)
 - [文章添加摘要图片](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E6%96%87%E7%AB%A0%E6%B7%BB%E5%8A%A0%E6%91%98%E8%A6%81%E5%9B%BE%E7%89%87)
+- [一些hexo的markdown语法](https://github.com/Longlongyu/hexo-theme-Cxo/wiki/%E4%B8%80%E4%BA%9Bhexo%E7%9A%84markdown%E8%AF%AD%E6%B3%95)
 
 ## 主题配置(Theme configuration)
 
