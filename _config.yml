@@ -47,8 +47,6 @@ intro_height: 70
 toc: true
 # word count & reading time
 reading_info: false
-# enable Busuanzi analytics
-reading_info: true
 # access statistics
 count:
   # enable analytics
