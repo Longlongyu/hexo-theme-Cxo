@@ -91,6 +91,9 @@
       color: white;
     }
   }
+  &.no-visible {
+    display: none;
+  }
 }
 // page-nav
 .cxo-page-nav {

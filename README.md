@@ -20,9 +20,9 @@ Watch online demo：[Mr.Long's Blog](https://longlongyu.github.io/ "Mr.Long's Bl
 IE >= 10
 
 ## Instruction
-- Cxo is my first time to make Hexo theme, if you have any suggestions and ideas for optimization and functionality，please tell me, I will correct them。
-- You are welcomed to create a new [issue](https:/github.com/Longlongyu/hexo-theme-Cxo/issues "new issue"). If there is any problem when installling and using this theme.
-- Your support is my motivation, so I will keep updating, star it if you like it 。
+- The Cxo is my first time to make the Hexo theme, if you have any suggestions and ideas for optimization and functionality, please tell me, I will correct them.
+- You are welcomed to create a new [issue](https:/github.com/Longlongyu/hexo-theme-Cxo/issues "new issue"). If there is any problem when installing and using this theme.
+- Your support is my motivation, so I will keep updating, star it if you like it.
 
 ## Install
 1. Execute the following commands in **Hexo directory**.
@@ -37,7 +37,7 @@ git clone -b master https://github.com/Longlongyu/hexo-theme-Cxo themes/Cxo
 theme: Cxo
 ```
 
-3. If you don't have `jade renderer` `sass renderer`, follow this:
+3. If you don't have `jade renderer` and `sass renderer`, follow this:
 
 ``` shell
 npm install hexo-renderer-jade hexo-renderer-sass --save
@@ -51,6 +51,7 @@ npm install hexo-renderer-jade hexo-renderer-sass --save
 - 1.0.3 - 『Added display of pinned articles』
 - 1.0.4 - 『Display article recent modification time』
 - 1.0.5 - 『Added custom timestamps and optimized the article directory. Now, you can define a summary image and add Baidu statistical』
+- 1.0.6 - 『Fixed issue of the tab-bar display on mobile.』
 
 ## Theme Update
 Jump into the Cxo folder, follow this:
