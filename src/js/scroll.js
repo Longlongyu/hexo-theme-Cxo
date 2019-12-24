@@ -5,10 +5,12 @@ let scroll = function () {
     tocTop = $toc.css('top'),
     introHeight = $('#cxo-intro').height(),
     $progressBar = $('.read-progress'),
-    $goup = $('#go-up')
+    $go_up = $('#go-up'),
+    $nav_drop = $('.intro-nav-drop')
   // 滚动
   let previousHeight = 0,
     continueScroll = 0
+
   function isScrollingUpOrDown(currTop) {
     continueScroll = currTop - previousHeight
     previousHeight = currTop
@@ -95,19 +97,21 @@ let scroll = function () {
       crossingState = isCrossingIntro(scrollTop)
     if (upDownState === 1) {
       $nav.css('top', -navHeight + 'px')
+      $nav_drop.addClass('no-visible')
       // $nav.removeClass('banner-show')
     } else if (upDownState === -1) {
       $nav.css('top', 0)
+      $nav_drop.removeClass('no-visible')
     }
     if (scrollTop === 0) {
       $nav_a.removeClass('main-color')
       $nav.css('top', 0)
       $nav.removeClass('nav-style-two')
-      $goup.addClass('close')
+      $go_up.addClass('close')
     } else {
       $nav.addClass('nav-style-two')
       $nav_a.addClass('main-color')
-      $goup.removeClass('close')
+      $go_up.removeClass('close')
     }
     // 如果不是post - page 以下忽略
     if (isPostPage) {
