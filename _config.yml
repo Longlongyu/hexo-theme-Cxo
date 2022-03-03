@@ -95,7 +95,7 @@ stylesheets:
 scripts:
 - /js/main.js?v=2018.7.9
 - /js/jquery.min.js
-- /js/jquery-uitotop.js
+- /js/jquery.uitotop.js
 - /js/index.min.js
 - /js/player-tab.min.js
 - /js/raven.min.js
