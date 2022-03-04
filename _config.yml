@@ -90,12 +90,8 @@ menu:
 stylesheets:
 - /css/style.css?v=2018.7.9
 - /css/animation.css?v=2018.7.9
-- /css/lebear.css
+- /css/szgotop.css
 # scripts loaded in the end of the body
 scripts:
 - /js/main.js?v=2018.7.9
-- /js/jquery.min.js
-- /js/jquery.uitotop.js
-- /js/index.min.js
-- /js/player-tab.min.js
-- /js/raven.min.js
+- /js/szgotop.js
