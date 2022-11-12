@@ -15,6 +15,7 @@ signature: If you don't like the world, create one instead of complaining.
 social:
   email: //lebear.top@gmail.com
   github: //github.com/leisurelybear
+  telegram: //t.me/kusa_moments
   #weibo: //www.weibo.com
   #facebook: //www.facebook.com
   #twitter: //twitter.com
@@ -86,6 +87,7 @@ menu:
   Archives: /archives/
   Tags: /tags/
   Friends: /friends/
+  OCR-BYE: /ocr-bye/ # 小工具
 # stylesheets loaded in the <head>
 stylesheets:
 - /css/style.css?v=2018.7.9
